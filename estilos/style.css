@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#index_cuerpo {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/pizza_fondo.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#titulo_y_slogan {
+    margin-bottom: 30px;
+}
+
+#titulo_y_slogan h1 {
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: lowercase;
+    margin-bottom: 15px;
+}
+
+#titulo_y_slogan h3 {
+    font-size: 18px;
+    font-weight: normal;
+    max-width: 550px;
+    line-height: 1.5;
+}
+
+.menu_portada {
+    margin-bottom: 25px;
+}
+
+.menu_portada ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu_portada ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu_portada ul li a:hover {
+    color: red;
+}
+
+.redes_portada {
+    display: flex;
+    gap: 15px;
+}
+
+.redes_portada a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.redes_portada a:hover {
+    color: red;
+}
+
+
+.cabecera_interna {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.logo_pizzeria {
+    font-size: 50px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.menu_compartido ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu_compartido ul li a {
+    color: blue;
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu_compartido ul li a:hover {
+    color: red;
+}
+
+#blog_cuerpo {
+    margin-top: 170px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.imagen_principal_blog img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.titulo_articulo {
+    display: inline-block;
+    width: 75%;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: middle;
+    margin-bottom: 25px;
+}
+
+.perfil_creador {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 25px;
+}
+
+.foto_redonda {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+.datos_creador {
+    font-size: 11px;
+    color: black;
+    line-height: 1.2;
+}
+
+.nombre_creador {
+    font-weight: normal;
+}
+
+.rol_creador {
+    font-weight: normal;
+}
+
+.contenido_texto p {
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.fecha_post {
+    font-size: 14px;
+}
+
+.bloque_con_icono {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.icono_decorativo {
+    width: 90px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.pie_compartido {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+    border-top: 1px solid #dddddd;
+}
+
+.pie_compartido p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.redes_compartidas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.redes_compartidas a {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.redes_compartidas a:hover {
+    color: red;
+}
+
+
+.cuerpo_galeria {
+    margin-top: 170px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.contenedor_fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tarjeta_pizza {
+    width: 260px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tarjeta_pizza img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border: 1px solid #cccccc;
+    box-shadow: 4px 4px 4px #888888;
+}
+
+.tarjeta_pizza img:hover {
+    filter: opacity(0.8);
+}
+
+.pie_foto {
+    font-size: 13px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #555555;
+    margin-top: 10px;
+}
+
+
+#videos_cuerpo {
+    margin-top: 170px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.titulo_seccion_videos {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.texto_video {
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.video_tarjeta {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.video_proporcion {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border: 1px solid #cccccc;
+    box-shadow: 4px 4px 4px #888888;
+}
+
+.video_proporcion iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#contactos_cuerpo {
+    margin-top: 170px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background: linear-gradient(to bottom, #f3e2c7, #e5c89b);
+}
+
+.contacto_contenido {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.info_contacto,
+.formulario_contacto {
+    width: 48%;
+}
+
+.info_contacto h2,
+.formulario_contacto h2 {
+    color: #8b2e2e;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.info_contacto table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+.info_contacto th,
+.info_contacto td {
+    border: 1px solid #ffffff;
+    padding: 15px;
+    text-align: left;
+}
+
+.horario_atencion {
+    border: 1px solid #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.imagen_contacto {
+    width: 180px;
+    height: 130px;
+    background-image: url('../img/contacto_pizza.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 4px solid white;
+}
+
+.formulario_contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario_contacto input,
+.formulario_contacto textarea {
+    padding: 10px;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+.formulario_contacto textarea {
+    height: 130px;
+    resize: none;
+}
+
+.formulario_contacto button {
+    background: gray;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario_contacto button:hover {
+    background: red;
+}
+
+.mapa_contacto {
+    margin-top: 40px;
+}
+
+.mapa_contacto iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+
+
+#nosotros_cuerpo {
+    margin-top: 170px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.titulo_nosotros {
+    background-color: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.contenido_nosotros {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 35px;
+}
+
+.texto_nosotros h3 {
+    margin-bottom: 20px;
+}
+
+.texto_nosotros p {
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.imagen_lateral_nosotros img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.galeria_equipo {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.galeria_equipo img {
+    width: 250px;
+    height: 170px;
+    object-fit: cover;
+    border: 1px solid #cccccc;
+    box-shadow: 4px 4px 4px #888888;
+}
