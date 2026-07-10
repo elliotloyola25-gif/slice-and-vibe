@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones | Slice & Vibe</title>
+
+    <link rel="icon" href="img/Favicon.png" type="image/png">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="cabecera_interna">
+        <h1 class="logo_pizzeria">Slice & Vibe</h1>
+
+        <nav class="menu_compartido">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="combos.html">Combos</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="promociones_cuerpo">
+
+        <div class="titulo_promociones">
+            <h2>Promociones Exclusivas</h2>
+        </div>
+
+        <p class="subtitulo_promociones">
+            Sabor único al mejor precio. Válido mostrando esta pantalla en caja.
+        </p>
+
+        <div class="tarjeta_promo">
+            <h2>¡2x1 en Pizza Familiar!</h2>
+            <p>
+                Disfruta las noches de finde con nuestra mejor combinación
+                artesanal: masa crujiente, ingredientes frescos y todo el sabor
+                de Slice & Vibe.
+            </p>
+            <button class="btn_reclamar" id="btnReclamar">Reclamar Cupón</button>
+        </div>
+
+        <div class="contenedor_promos_extra">
+
+            <div class="promo_extra">
+                <h4>Martes de Pizza</h4>
+                <p>20% de descuento en pizzas medianas todos los martes.</p>
+            </div>
+
+            <div class="promo_extra">
+                <h4>Delivery Gratis</h4>
+                <p>En pedidos mayores a S/ 60 dentro de la zona de reparto.</p>
+            </div>
+
+            <div class="promo_extra">
+                <h4>Combo Estudiante</h4>
+                <p>Pizza personal + bebida a precio especial de lunes a viernes.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="pie_compartido">
+        <p>Síguenos en nuestras redes sociales:</p>
+        <div class="redes_compartidas">
+            <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <!-- Plugin jQuery / SweetAlert2 para la ventana emergente -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btnReclamar').on('click', function () {
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Cupón Activado!',
+                    html: 'Muestra el código en caja: <b>SLICE-2X1-VIBE</b>',
+                    confirmButtonText: 'Entendido',
+                    confirmButtonColor: '#8b0000'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

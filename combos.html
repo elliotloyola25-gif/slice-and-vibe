@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combos | Slice & Vibe</title>
+
+    <link rel="icon" href="img/Favicon.png" type="image/png">
+
+    <!-- Bootstrap 5 vía CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <style>
+        /* Ajustes puntuales para integrar Bootstrap con la identidad de Slice & Vibe */
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 76px;
+        }
+
+        .navbar-slice {
+            background-color: #8b0000;
+        }
+
+        .navbar-slice .navbar-brand {
+            font-family: Georgia, serif;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .navbar-slice .nav-link {
+            color: #f3e2c7;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .navbar-slice .nav-link:hover,
+        .navbar-slice .nav-link.active {
+            color: #ffffff !important;
+            text-decoration: underline;
+        }
+
+        #carruselCombos .carousel-item img {
+            height: 380px;
+            object-fit: cover;
+            filter: brightness(0.7);
+        }
+
+        #carruselCombos .carousel-caption h3 {
+            font-family: Georgia, serif;
+            font-style: italic;
+        }
+
+        .titulo_combos {
+            background-color: #8b0000;
+            color: white;
+        }
+
+        .card-combo {
+            border: none;
+            box-shadow: 4px 4px 4px #888888;
+            transition: transform 0.2s ease;
+        }
+
+        .card-combo:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-combo img {
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .precio-combo {
+            background-color: #8b0000;
+            color: white;
+            font-weight: bold;
+        }
+
+        footer.pie_compartido {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Bootstrap con iconos -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-slice fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Slice & Vibe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCombos">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navCombos">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html"><i class="bi bi-people"></i> Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html"><i class="bi bi-journal-text"></i> Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html"><i class="bi bi-images"></i> Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="videos.html"><i class="bi bi-camera-reels"></i> Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="promociones.html"><i class="bi bi-tag"></i> Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="combos.html"><i class="bi bi-basket"></i> Combos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactos.html"><i class="bi bi-envelope"></i> Contactos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel Bootstrap de 3 imágenes -->
+    <div id="carruselCombos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carruselCombos" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carruselCombos" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carruselCombos" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/pizza_horno.jpg" class="d-block w-100" alt="Pizza al horno">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Sabor recién horneado</h3>
+                    <p>Masa artesanal cocida a la perfección.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/pizza2.jpg" class="d-block w-100" alt="Pizza combo">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Combos para compartir</h3>
+                    <p>Ideales para amigos y familia.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/pizza3.jpg" class="d-block w-100" alt="Pizza especial">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Ingredientes frescos</h3>
+                    <p>Cada combo, una experiencia distinta.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselCombos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselCombos" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <main>
+        <div class="container my-5">
+
+            <div class="titulo_combos text-center p-3 mb-4">
+                <h2>Menú de Combos Especiales</h2>
+            </div>
+
+            <p class="text-center text-muted mb-5">
+                Página maquetada usando Bootstrap 5: contenedor, filas y columnas con breakpoints.
+            </p>
+
+            <h4 class="mb-3">Combos Individuales</h4>
+            <div class="row g-4 mb-5">
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card card-combo h-100">
+                        <img src="img/pizza4.avif" class="card-img-top" alt="Combo Mañanero">
+                        <div class="card-body">
+                            <h5 class="card-title">Combo Mañanero</h5>
+                            <p class="card-text">Una pizza personal acompañada de una gaseosa personal. El inicio ideal para tu día.</p>
+                        </div>
+                        <div class="card-footer precio-combo text-center">
+                            S/ 22.00
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card card-combo h-100">
+                        <img src="img/pizza5.jpg" class="card-img-top" alt="Combo Ejecutivo">
+                        <div class="card-body">
+                            <h5 class="card-title">Combo Ejecutivo</h5>
+                            <p class="card-text">Pizza mediana de dos sabores más una porción de pan al ajo, ideal para el almuerzo.</p>
+                        </div>
+                        <div class="card-footer precio-combo text-center">
+                            S/ 35.00
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card card-combo h-100">
+                        <img src="img/pizza6.jpg" class="card-img-top" alt="Tarde Dulce">
+                        <div class="card-body">
+                            <h5 class="card-title">Tarde Dulce</h5>
+                            <p class="card-text">Pizza personal a elección junto con una porción de nuestro postre artesanal del día.</p>
+                        </div>
+                        <div class="card-footer precio-combo text-center">
+                            S/ 28.00
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h4 class="mb-3">Promoción Especial para Compartir</h4>
+            <div class="row align-items-center g-4">
+
+                <div class="col-12 col-md-6">
+                    <img src="img/rebanada.webp" class="img-fluid rounded shadow" alt="Combo Amigos">
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <h3 class="text-danger fw-bold">Combo Amigos Slice & Vibe</h3>
+                    <p>
+                        Llévate 2 pizzas familiares a elección, una porción grande de
+                        alitas y bebidas para compartir las tardes de estudio o reunión.
+                    </p>
+                    <p class="fst-italic text-muted">*Disponible de lunes a viernes a partir de las 4:00 p.m.</p>
+                    <span class="badge precio-combo p-2 mb-3">Precio Especial: S/ 75.00</span>
+                    <br>
+                    <a href="promociones.html" class="btn btn-outline-danger mt-3">
+                        <i class="bi bi-tag"></i> Ver más promociones
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="pie_compartido">
+        <p>Copyright 2026 - Todos los derechos reservados</p>
+        <div class="redes_compartidas">
+            <a href="https://x.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank"><i class="bi bi-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (necesario para navbar responsive y carrusel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
